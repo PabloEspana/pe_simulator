@@ -577,7 +577,8 @@ class Aleatorios(QtWidgets.QMainWindow, ventanPrincipal):
 		ventanPrincipal.__init__(self)
 		self.setupUi(self)
 		self.showMaximized()
-
+		self.enlace_github.clicked.connect(self.abrir_github)
+		
 		self.ventana2 = ventanaAleatorios(self)
 		self.ventana3 = ventanaSimulacion(self)
 		self.ventana4 = ventanaSimulacionLineaEspera(self)
@@ -618,6 +619,9 @@ class Aleatorios(QtWidgets.QMainWindow, ventanPrincipal):
 		menu_aleatorios.addAction(menu_regresion)
 
 		
+	def abrir_github(self):
+		QtGui.QDesktopServices().openUrl(QtCore.QUrl('https://github.com/PabloEspana/pe_simulator'))
+
 	def menuAbrirAleatorios(self):
 		self.ventana2.show()
 
