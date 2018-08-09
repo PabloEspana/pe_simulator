@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Principal2</class>
+ <widget class="QWidget" name="Principal2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1180</width>
+    <height>568</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Principal2{
+	background:#212121;
+}
+
+.QLabel{
+	background:#212121;
+}
+
+.QLineEdit{
+	
+	font: 75 7.5pt &quot;Arial&quot;;
+}
+.QPushButton{
+	font-family: Arial, Verdana;
+	color:#ffffff;
+	background-color: #1883BA;
+	padding:5px;
+	font-weight: 600;
+	font-size: 13px;
+}</string>
+  </property>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>90</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>c:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtXn">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>110</y>
+     <width>99</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>150</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>n:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtA">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>70</y>
+     <width>99</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tabla">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>90</y>
+     <width>451</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="dragDropOverwriteMode">
+    <bool>true</bool>
+   </property>
+   <property name="rowCount">
+    <number>0</number>
+   </property>
+   <property name="columnCount">
+    <number>4</number>
+   </property>
+   <column>
+    <property name="text">
+     <string>Xn</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>aXn+c</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>(aXn+c) mod m</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>ri</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLineEdit" name="txtCantidad">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>150</y>
+     <width>99</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>70</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>a:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtC">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>90</y>
+     <width>99</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnGenerar">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>180</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Generar</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>130</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>m</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>301</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Generador Números Aleatorios - Método Congruencial Lineal</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>110</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Xn:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtM">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>130</y>
+     <width>99</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>60</y>
+     <width>171</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Aleatorios de llegadas</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>60</y>
+     <width>171</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Aleatorios de servicios</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tabla_2">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>90</y>
+     <width>451</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="dragDropOverwriteMode">
+    <bool>true</bool>
+   </property>
+   <property name="rowCount">
+    <number>0</number>
+   </property>
+   <property name="columnCount">
+    <number>4</number>
+   </property>
+   <column>
+    <property name="text">
+     <string>Xn</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>aXn+c</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>(aXn+c) mod m</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>ri</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="grafico_llegada">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>270</y>
+     <width>441</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grafico_servicio">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>270</y>
+     <width>451</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label_2</zorder>
+  <zorder>label_5</zorder>
+  <zorder>tabla</zorder>
+  <zorder>txtCantidad</zorder>
+  <zorder>label</zorder>
+  <zorder>txtC</zorder>
+  <zorder>btnGenerar</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_6</zorder>
+  <zorder>label_3</zorder>
+  <zorder>txtM</zorder>
+  <zorder>label_7</zorder>
+  <zorder>label_8</zorder>
+  <zorder>tabla_2</zorder>
+  <zorder>txtA</zorder>
+  <zorder>txtXn</zorder>
+  <zorder>grafico_llegada</zorder>
+  <zorder>grafico_servicio</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>txtA</tabstop>
+  <tabstop>txtC</tabstop>
+  <tabstop>txtXn</tabstop>
+  <tabstop>txtM</tabstop>
+  <tabstop>txtCantidad</tabstop>
+  <tabstop>btnGenerar</tabstop>
+  <tabstop>tabla</tabstop>
+  <tabstop>tabla_2</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

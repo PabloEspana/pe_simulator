@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Principal3</class>
+ <widget class="QWidget" name="Principal3">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1146</width>
+    <height>708</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Principal3{
+	background:#212121;
+}
+
+.QLabel{
+	background:#212121;
+}
+
+.QLineEdit{
+	
+	font: 75 7.5pt &quot;Arial&quot;;
+}
+.QPushButton{
+	font-family: Arial, Verdana;
+	color:#ffffff;
+	background-color: #1883BA;
+	padding:5px;
+	font-weight: 600;
+	font-size: 13px;
+}
+</string>
+  </property>
+  <widget class="QLineEdit" name="txtFrecuenciaCantidad">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>70</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tabla_funcion">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>50</y>
+     <width>221</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="dragDropOverwriteMode">
+    <bool>true</bool>
+   </property>
+   <property name="rowCount">
+    <number>0</number>
+   </property>
+   <property name="columnCount">
+    <number>2</number>
+   </property>
+   <column>
+    <property name="text">
+     <string>Cantidad</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Frecuencia</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>168</x>
+     <y>430</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>N°.Eventos</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtEventos">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>430</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>10</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tabla_completa">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>50</y>
+     <width>531</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="dragDropOverwriteMode">
+    <bool>true</bool>
+   </property>
+   <property name="rowCount">
+    <number>0</number>
+   </property>
+   <property name="columnCount">
+    <number>5</number>
+   </property>
+   <column>
+    <property name="text">
+     <string>Cantidad</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Probabilidad</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>P. Acumlada</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>I. Menor</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>I. Mayor</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cantidad</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tabla_simulacion">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>338</x>
+     <y>430</y>
+     <width>221</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="dragDropOverwriteMode">
+    <bool>true</bool>
+   </property>
+   <property name="rowCount">
+    <number>0</number>
+   </property>
+   <property name="columnCount">
+    <number>2</number>
+   </property>
+   <column>
+    <property name="text">
+     <string>N° Aleatorio</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Cantidad</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>70</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Frecuencia</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>168</x>
+     <y>400</y>
+     <width>241</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Simulación de llegadas</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnAgregarDemanda">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>100</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Agregar</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>231</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Distribución de frecuencia de llegadas</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSimular">
+   <property name="geometry">
+    <rect>
+     <x>248</x>
+     <y>460</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Simular</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtCantidadCliente">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>50</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tabla_completa_tiempo">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>230</y>
+     <width>531</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="dragDropOverwriteMode">
+    <bool>true</bool>
+   </property>
+   <property name="rowCount">
+    <number>0</number>
+   </property>
+   <property name="columnCount">
+    <number>5</number>
+   </property>
+   <column>
+    <property name="text">
+     <string>Tiempo Servicio</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Probabilidad</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>P. Acumlada</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>I. Menor</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>I. Mayor</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>250</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Frecuencia</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtTiempoServicio">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>230</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tabla_funcion_tiempo">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>230</y>
+     <width>221</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="dragDropOverwriteMode">
+    <bool>true</bool>
+   </property>
+   <property name="rowCount">
+    <number>0</number>
+   </property>
+   <property name="columnCount">
+    <number>3</number>
+   </property>
+   <column>
+    <property name="text">
+     <string>Tiempo Servicio</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Frecuencia</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Quitar</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label_17">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>230</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tiempo</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtFrecuenciaTiempo">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>250</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnAgregarTiempo">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>280</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Agregar</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_18">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>200</y>
+     <width>271</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Distribución de frecuencia de tiempos de servicio</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_19">
+   <property name="geometry">
+    <rect>
+     <x>576</x>
+     <y>430</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>N°.Eventos</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tabla_simulacion_2">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>746</x>
+     <y>430</y>
+     <width>221</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="dragDropOverwriteMode">
+    <bool>true</bool>
+   </property>
+   <property name="rowCount">
+    <number>0</number>
+   </property>
+   <property name="columnCount">
+    <number>2</number>
+   </property>
+   <column>
+    <property name="text">
+     <string>N° Aleatorio</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Tiempo Servicio</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="btnSimularTiempos">
+   <property name="geometry">
+    <rect>
+     <x>656</x>
+     <y>460</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Simular</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_20">
+   <property name="geometry">
+    <rect>
+     <x>576</x>
+     <y>400</y>
+     <width>221</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Simulación de tiempos de servicios</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtEventos_2">
+   <property name="geometry">
+    <rect>
+     <x>658</x>
+     <y>430</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>10</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblTotalLlegadas">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>590</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Shell Dlg 2</family>
+     <pointsize>9</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 75 9pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Total:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblPromedioLlegadas">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>620</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Shell Dlg 2</family>
+     <pointsize>9</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 75 9pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Promedio:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblTotalServicio">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>590</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Shell Dlg 2</family>
+     <pointsize>9</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 75 9pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Total:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblPromedioServicio">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>620</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Shell Dlg 2</family>
+     <pointsize>9</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 75 9pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Promedio:</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>txtCantidadCliente</tabstop>
+  <tabstop>txtFrecuenciaCantidad</tabstop>
+  <tabstop>btnAgregarDemanda</tabstop>
+  <tabstop>txtTiempoServicio</tabstop>
+  <tabstop>txtFrecuenciaTiempo</tabstop>
+  <tabstop>btnAgregarTiempo</tabstop>
+  <tabstop>txtEventos</tabstop>
+  <tabstop>btnSimular</tabstop>
+  <tabstop>txtEventos_2</tabstop>
+  <tabstop>btnSimularTiempos</tabstop>
+  <tabstop>tabla_funcion</tabstop>
+  <tabstop>tabla_completa</tabstop>
+  <tabstop>tabla_funcion_tiempo</tabstop>
+  <tabstop>tabla_completa_tiempo</tabstop>
+  <tabstop>tabla_simulacion</tabstop>
+  <tabstop>tabla_simulacion_2</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
